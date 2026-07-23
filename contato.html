@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a TechStore para tirar dúvidas sobre produtos tecnológicos.">
+    <title>Contato | TechStore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a class="site-logo" href="index.html">TechStore</a>
+
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Contato</h1>
+            <p>Envie sua mensagem para a TechStore. Este formulário é visual e ainda não possui envio real.</p>
+        </section>
+
+        <section class="contact-section" aria-labelledby="contact-title">
+            <h2 id="contact-title">Fale conosco</h2>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" placeholder="Digite o assunto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+
+        <section class="contact-info-section" aria-labelledby="contact-info-title">
+            <h2 id="contact-info-title">Informações de contato</h2>
+
+            <address>
+                <p>Email: contato@techstore.com</p>
+                <p>Telefone: (11) 99999-0000</p>
+                <p>Atendimento: segunda a sexta, das 9h às 18h</p>
+            </address>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <h2>TechStore</h2>
+            <p>Loja virtual fictícia especializada em produtos tecnológicos.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+            <h2>Links úteis</h2>
+
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <address class="footer-contact">
+            <h2>Contato</h2>
+            <p>Email: contato@techstore.com</p>
+            <p>Telefone: (11) 99999-0000</p>
+        </address>
+
+        <p class="footer-copy">&copy; 2026 TechStore. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
