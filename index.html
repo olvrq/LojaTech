@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Navegação principal">
-            <a href="index.html">TechStore</a>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a class="site-logo" href="index.html">TechStore</a>
 
-            <ul>
-                <li><a href="index.html">Início</a></li>
+            <ul class="nav-list">
+                <li><a href="index.html" aria-current="page">Início</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -22,15 +22,113 @@
     </header>
 
     <main>
-        <section>
+        <section class="hero-section">
+            <p class="hero-eyebrow">Tecnologia para todos os momentos</p>
             <h1>TechStore</h1>
-            <p>Produtos tecnológicos selecionados para sua rotina digital.</p>
-            <a href="produtos.html">Ver produtos</a>
+            <p class="hero-description">
+                Encontre notebooks, smartphones, acessórios e periféricos selecionados para sua rotina digital.
+            </p>
+            <a class="hero-button" href="produtos.html">Ver produtos</a>
+        </section>
+
+        <section class="categories-section" aria-labelledby="categories-title">
+            <h2 id="categories-title">Categorias em destaque</h2>
+
+            <ul class="categories-list">
+                <li>
+                    <a href="produtos.html">Notebooks</a>
+                </li>
+                <li>
+                    <a href="produtos.html">Smartphones</a>
+                </li>
+                <li>
+                    <a href="produtos.html">Acessórios</a>
+                </li>
+                <li>
+                    <a href="produtos.html">Periféricos</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="featured-products-section" aria-labelledby="featured-products-title">
+            <h2 id="featured-products-title">Produtos em destaque</h2>
+
+            <div class="products-grid">
+                <article class="product-card">
+                    <p class="product-category">Notebook</p>
+                    <h3>Notebook Pro X15</h3>
+                    <p>Alta performance para estudos, trabalho e produtividade.</p>
+                    <p class="product-price">R$ 4.899,90</p>
+                    <a href="produtos.html">Ver detalhes</a>
+                </article>
+
+                <article class="product-card">
+                    <p class="product-category">Smartphone</p>
+                    <h3>Smartphone Nova 128GB</h3>
+                    <p>Tela ampla, boa autonomia e armazenamento para o dia a dia.</p>
+                    <p class="product-price">R$ 2.199,90</p>
+                    <a href="produtos.html">Ver detalhes</a>
+                </article>
+
+                <article class="product-card">
+                    <p class="product-category">Acessório</p>
+                    <h3>Headset Pulse Gamer</h3>
+                    <p>Som imersivo e microfone ajustável para jogos e reuniões.</p>
+                    <p class="product-price">R$ 349,90</p>
+                    <a href="produtos.html">Ver detalhes</a>
+                </article>
+
+                <article class="product-card">
+                    <p class="product-category">Periférico</p>
+                    <h3>Teclado Mecânico RGB</h3>
+                    <p>Teclas responsivas, iluminação personalizável e construção resistente.</p>
+                    <p class="product-price">R$ 429,90</p>
+                    <a href="produtos.html">Ver detalhes</a>
+                </article>
+
+                <article class="product-card">
+                    <p class="product-category">Acessório</p>
+                    <h3>Mouse Sem Fio Precision</h3>
+                    <p>Design ergonômico, conexão estável e bateria de longa duração.</p>
+                    <p class="product-price">R$ 189,90</p>
+                    <a href="produtos.html">Ver detalhes</a>
+                </article>
+
+                <article class="product-card">
+                    <p class="product-category">Periférico</p>
+                    <h3>Monitor UltraView 27"</h3>
+                    <p>Imagem nítida e mais espaço de tela para produtividade e entretenimento.</p>
+                    <p class="product-price">R$ 1.499,90</p>
+                    <a href="produtos.html">Ver detalhes</a>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 TechStore. Todos os direitos reservados.</p>
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <h2>TechStore</h2>
+            <p>Loja virtual fictícia especializada em produtos tecnológicos.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+            <h2>Links úteis</h2>
+
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <address class="footer-contact">
+            <h2>Contato</h2>
+            <p>Email: contato@techstore.com</p>
+            <p>Telefone: (11) 99999-0000</p>
+        </address>
+
+        <p class="footer-copy">&copy; 2026 TechStore. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
